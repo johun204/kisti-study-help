@@ -17,5 +17,9 @@
 <img src="https://raw.githubusercontent.com/johun204/kisti-study-help/main/example.gif" />
 
 
+##다운로드
+[kisti-study-help.zip](https://github.com/johun204/kisti-study-help/archive/main.zip) 폴더 째로 압축 풀어 실행해 주세요.
+
+
 ## 오류가 발생할 경우
 [.Net Framework](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-kor) 최신 버전을 설치하시거나, 백신에서 예외 프로그램에 추가를 해주시면 됩니다.
