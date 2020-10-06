@@ -20,7 +20,7 @@
 
 
 ## 다운로드
-[kisti-study-help.zip](https://github.com/johun204/kisti-study-help/archive/main.zip) 
+* [kisti-study-help.zip](https://github.com/johun204/kisti-study-help/archive/main.zip) 
 
 폴더 째로 압축 풀어 실행해 주세요.
 
