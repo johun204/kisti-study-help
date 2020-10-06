@@ -14,6 +14,8 @@
 * 수식 문자 깨짐 복구 기능.
 * 단축키를 이용하여 빠른 입력 가능. (F6 : 복사, F7 : 붙여넣기, F8 : 문단 구분)
 
+<img src="https://raw.githubusercontent.com/johun204/kisti-study-help/main/example.gif" />
+
 
 ## 오류가 발생할 경우
 [.Net Framework](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-kor) 최신 버전을 설치하시거나, 백신에서 예외 프로그램에 추가를 해주시면 됩니다.
