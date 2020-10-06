@@ -21,6 +21,9 @@
 <img src="https://raw.githubusercontent.com/johun204/kisti-study-help/main/example.gif" />
 
 
+**변환 후 초록색 표시 영역의 띄어쓰기를 반드시 재확인 해주세요**
+
+
 ## 다운로드
 * [kisti-study-help.zip](https://github.com/johun204/kisti-study-help/archive/main.zip) 
 
