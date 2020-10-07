@@ -14,7 +14,7 @@ namespace 논문분석_도우미
     public partial class mainForm : MetroFramework.Forms.MetroForm
     {
 
-        // 단축키를위한 영역 (시작)
+        // 단축키 등록
         [DllImport("user32.dll")]
         public static extern bool RegisterHotKey(IntPtr hWnd, int id, KeyModifiers fsModifiers, Keys vk);
 
