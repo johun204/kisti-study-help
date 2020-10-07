@@ -27,7 +27,7 @@
 ## 다운로드
 * [kisti-study-help.zip](https://github.com/johun204/kisti-study-help/archive/main.zip) 
 
-  폴더 째로 압축 풀어 Release 폴더의 **"논문분석_도우미.exe"** 파일을 실행해 주세요.
+ 폴더 째로 압축 풀어 Release 폴더의 **"논문분석_도우미.exe"** 파일을 실행해 주세요.
 
 
 ## 오류가 발생할 경우
