@@ -14,7 +14,7 @@ namespace 논문분석_도우미
     public partial class mainForm : MetroFramework.Forms.MetroForm
     {
 
-		// 단축키를위한 영역 (시작)
+        // 단축키를위한 영역 (시작)
         [DllImport("user32.dll")]
         public static extern bool RegisterHotKey(IntPtr hWnd, int id, KeyModifiers fsModifiers, Keys vk);
 
@@ -92,9 +92,7 @@ namespace 논문분석_도우미
         List<int> Pnum = new List<int>();
         List<int> koBlank = new List<int>();
 
-        
-
-		// 문자열 처리를 위한 함수
+        // 문자열 처리를 위한 함수
         private string Parsing(string str, string a, string b)
         {
             if (str.IndexOf(a) > -1)
@@ -115,7 +113,7 @@ namespace 논문분석_도우미
             return "";
         }
 
-		// 문자열 A, B의 연결 부분이 알파벳일 경우 true 반환
+        // 문자열 A, B의 연결 부분이 알파벳일 경우 true 반환
         private bool AlphabetCheck(string A, string B)
         {
             if (A.Length > 0) {
@@ -134,7 +132,7 @@ namespace 논문분석_도우미
             return false;
         }
 
-		// 띄어쓰기 검사 후 문자열 A, B의 연결 부분이 공백인지 체크
+        // 띄어쓰기 검사 후 문자열 A, B의 연결 부분이 공백인지 체크
         private int BlankCheck(string str, string A, string B)
         {
             if (B.Trim().Length == 0) return -1;
@@ -160,7 +158,7 @@ namespace 논문분석_도우미
 
 
 
-		// 띄어쓰기 검사 함수
+        // 띄어쓰기 검사 함수
         private void Spacing()
         {
             if (Ptxt1.Count > 0)
@@ -224,13 +222,13 @@ namespace 논문분석_도우미
                     File.Delete(Application.StartupPath + "/Spacing.out");
                 }
                 catch {
-					MessageBox.Show("띄어쓰기 검사중 오류가 발생했습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-				}
+                    MessageBox.Show("띄어쓰기 검사중 오류가 발생했습니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
 
-		// 개행문자 두번을 기준으로 문단을 구분
+        // 개행문자 두번을 기준으로 문단을 구분
         private void SplitParagraph(string str, int num)
         {
 
@@ -321,7 +319,7 @@ namespace 논문분석_도우미
             }
         }
 
-		// 우측 결과 화면에 링크로 변환하는 함수
+        // 우측 결과 화면에 링크로 변환하는 함수
         private string SpaceBoxFunction(string A, string B, bool blank, bool green, int num, int cnt)
         {
             string s = string.Empty;
@@ -453,7 +451,7 @@ namespace 논문분석_도우미
             if (CheckBox2.Checked) // 각주 위첨자 달기 1) 2)
             {
 
-				// ( )괄호가 쌍으로 있을경우 예외처리, 숫자 년도 등
+                // ( )괄호가 쌍으로 있을경우 예외처리, 숫자 년도 등
                 Regex re2 = new Regex(@"[(][\r\n가-힣A-Za-z0-9=<>＝＜＞：；℃.,;:·⋅∼~≤≥αβß&′*# ×÷±\/\+\-]+[)]", RegexOptions.IgnoreCase | RegexOptions.Singleline);
                 MatchCollection resultColl2 = re2.Matches(str);
 
@@ -638,7 +636,7 @@ namespace 논문분석_도우미
 
         private void ok_confirm()
         {
-			// 저장 버튼
+            // 저장 버튼
             try
             {
                 string str = resultBrowser.Document.Body.InnerHtml;
@@ -665,14 +663,14 @@ namespace 논문분석_도우미
         }
         private void btn_process()
         {
-			// 변환 버튼
+            // 변환 버튼
             processButton.Enabled = false;
             stateLabel.Text = "처리 중..";
             Application.DoEvents();
             resultBrowser.Navigate("about:blank");
             try
             {
-				// 변환 전 backup.txt 파일을 생성
+                // 변환 전 backup.txt 파일을 생성
                 using (StreamWriter outputFile = new StreamWriter(Application.StartupPath + "/backup.txt"))
                 {
                     outputFile.Write(inputTextBox.Text);
@@ -687,7 +685,7 @@ namespace 논문분석_도우미
             {
                 using (StreamWriter outputFile = new StreamWriter(Application.StartupPath + "/data.html"))
                 {
-					// data.html로 저장하여 불러오기
+                    // data.html로 저장하여 불러오기
                     str = "<meta charset=utf-8><style>body{font-family:'Malgun Gothic';}p{line-height: 1.5em;}a{text-decoration:none;}a:hover{font-weight:bold;text-decoration:underline;}span{cursor:default;}.r{color:red;border:1px solid red;}.g{color:green;border:1px solid green;}.p{color:purple;}.b{color:blue;}</style><script>function f(idx,txt,txt2){if(document.getElementById(idx).innerHTML.toLowerCase()==txt2.toLowerCase()){document.getElementById(idx).innerHTML=txt;}else{document.getElementById(idx).innerHTML=txt2;}}function fstrong(idx){if(document.getElementById(idx).innerHTML.search(new RegExp('<strong>', 'i'))==-1){document.getElementById(idx).innerHTML='<strong>'+document.getElementById(idx).innerHTML+'</strong>';}else{document.getElementById(idx).innerHTML=document.getElementById(idx).innerHTML.replace(/<(\\/strong|strong)([^>]*)>/gi,'');}}function fsup(idx){if(document.getElementById(idx).innerHTML.search(new RegExp('<sup>', 'i'))==-1){document.getElementById(idx).innerHTML='<sup>'+document.getElementById(idx).innerHTML+'</sup>';}else{document.getElementById(idx).innerHTML=document.getElementById(idx).innerHTML.replace(/<(\\/sup|sup)([^>]*)>/gi,'');}}</script><body>" + strFunction(inputTextBox.Text, 1) + "</body>";
                     outputFile.Write(str);
                 }
@@ -695,7 +693,7 @@ namespace 논문분석_도우미
             }
             catch
             {
-				// data.html로 저장에 실패할경우 webBrowser에 바로 로드
+                // data.html로 저장에 실패할경우 webBrowser에 바로 로드
                 resultBrowser.Document.Write(str);
             }
             stateLabel.Text = "처리 완료 (저장 버튼을 눌러 주세요)";
@@ -711,7 +709,7 @@ namespace 논문분석_도우미
 
         private void mainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-			// 폼 종료시 단축키 해제
+            // 폼 종료시 단축키 해제
             UnregisterHotKey(this.Handle, HOTKEY_ID);
             UnregisterHotKey(this.Handle, HOTKEY_ID + 1);
             UnregisterHotKey(this.Handle, HOTKEY_ID + 2);
@@ -757,7 +755,7 @@ namespace 논문분석_도우미
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-			// 메인 폼 로드
+            // 메인 폼 로드
             resultBrowser.Navigate("about:blank");
 
             inputTextBox.Text = initTxt;
@@ -780,7 +778,7 @@ namespace 논문분석_도우미
             Application.DoEvents();
 
 
-			// 단축키 등록
+            // 단축키 등록
             RegisterHotKey(this.Handle, HOTKEY_ID, KeyModifiers.Control | KeyModifiers.Shift, Keys.B);
             RegisterHotKey(this.Handle, HOTKEY_ID + 1, KeyModifiers.Control | KeyModifiers.Shift, Keys.V);
             RegisterHotKey(this.Handle, HOTKEY_ID + 2, KeyModifiers.Control | KeyModifiers.Shift, Keys.Z);
@@ -791,7 +789,7 @@ namespace 논문분석_도우미
 
         private void mainForm_Resize(object sender, EventArgs e)
         {
-			// 폼 크기 변경시 컨트롤 크기 변경
+            // 폼 크기 변경시 컨트롤 크기 변경
             try
             {
 
@@ -812,13 +810,13 @@ namespace 논문분석_도우미
 
         private void CheckBox6_CheckStateChanged(object sender, EventArgs e)
         {
-			// 폼 항상 위
+            // 폼 항상 위
             this.TopMost = CheckBox6.Checked;
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-			// 프로그램 내부 단축키
+            // 프로그램 내부 단축키
             if (keyData == (Keys.Control | Keys.D))
             {
                 btn_process();
