@@ -16,7 +16,6 @@
 * 수식 문자 깨짐 복구 기능.
 * 단축키를 이용하여 빠른 입력 가능. (F6 : 복사, F7 : 붙여넣기, F8 : 문단 구분)
 
-  기존의 단축키도 사용 가능합니다. (Ctrl + Shift + V, B)
 
 <img src="https://raw.githubusercontent.com/johun204/kisti-study-help/main/example.gif" />
 
