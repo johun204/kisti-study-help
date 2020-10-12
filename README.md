@@ -1,6 +1,6 @@
 # KISTI 논문전문 보조 프로그램
 
-데이터구축사업의 논문전문(초급) 입력의 효율적인 작업과 능률을 높이기 위한 프로그램입니다.
+한국과학기술정보연구원 데이터구축사업의 논문전문(초급) 입력의 효율적인 작업과 능률을 높이기 위한 프로그램입니다.
 
 
 ## 소개
@@ -34,3 +34,7 @@
 
 
 문의 및 건의사항은 [johun204@gmail.com](mailto:johun204@gmail.com) 메일로 보내주세요.
+
+## Contribution
+  * Created by 조동훈
+  * Supported by Korea Institute of Science and Technology Information(KISTI)
