@@ -13,7 +13,7 @@
   <표>, <그림> 등 한글이 포함된 경우에는 수정하지 않습니다.
  
 * 수식 문자 깨짐 복구 기능.
-* 단축키를 이용하여 빠른 입력 가능. (F6 : 복사, F7 : 붙여넣기, F8 : 문단 구분)
+* 단축키를 이용하여 빠른 입력 가능. (<kbd>F6</kbd> : 복사, <kbd>F7</kbd> : 붙여넣기, <kbd>F8</kbd> : 문단 구분)
 
 
 <img src="https://raw.githubusercontent.com/johun204/kisti-study-help/main/example.gif" />
