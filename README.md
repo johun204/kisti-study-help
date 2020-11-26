@@ -32,8 +32,6 @@
 [.Net Framework](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-kor) 최신 버전을 설치하시거나, **백신에서 예외 프로그램에 추가**를 해주시면 됩니다.
 
 
-문의 및 건의사항은 [johun204@gmail.com](mailto:johun204@gmail.com) 메일로 보내주세요.
-
 ## Contribution
   * Created by 조동훈
   * Supported by Korea Institute of Science and Technology Information(KISTI)
