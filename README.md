@@ -16,7 +16,7 @@
 * 단축키를 이용하여 빠른 입력 가능. (<kbd>F6</kbd> : 복사, <kbd>F7</kbd> : 붙여넣기, <kbd>F8</kbd> : 문단 구분)
 
 
-<img src="https://raw.githubusercontent.com/johun204/kisti-study-help/main/example.gif" />
+![동작 화면](https://raw.githubusercontent.com/johun204/kisti-study-help/main/example.gif)
 
 
 변환 후 초록색 표시 영역의 띄어쓰기를 반드시 재확인 해주세요.
